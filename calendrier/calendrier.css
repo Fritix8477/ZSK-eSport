@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #8e44ad, #e91e63);
+    color: white;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e91e63;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.calendar {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.week {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.day {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.soon-button {
+    background: #e91e63;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.soon-button:hover {
+    background: #8e44ad;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+}
