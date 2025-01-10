@@ -10,12 +10,19 @@
     <link rel="shortcut icon" href="images.png" />
 </head>
 <body>
+    
     <header>
-        <a href="index.html">
-            <img src="image.png" alt="Logo ZSK Esport" style="cursor: pointer;">
-        </a>        
+        <img src="image.png" alt="Logo">
+        <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
         <nav>
-            <ul>
+            <ul class="navMenu">
+                <li><a href="shop/shop.html">Shop</a></li>
+                <li><a href="calendrier/calendrier.html">Calandrier</a></li>
+                <li><a href="#players">Joueurs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#games">Jeux</a></li> 
+            </ul>
+            <ul class="mobile-nav">
                 <li><a href="shop/shop.html">Shop</a></li>
                 <li><a href="calendrier/calendrier.html">Calandrier</a></li>
                 <li><a href="#players">Joueurs</a></li>
@@ -23,7 +30,7 @@
                 <li><a href="#games">Jeux</a></li> 
             </ul>
         </nav>
-    </header>    
+    </header>
 
     <div class="hero1">
         <h1>Bienvenue chez ZSK Esport</h1>
@@ -44,12 +51,12 @@
             <div class="players-container">
                 <div class="player">
                     <img src="joueur.png" alt="Joueur 1">
-                    <h3>Equateur</h3>
+                    <h3>Zian Crema</h3>
                     <p>Créateur de ZSK Esport</p>
                 </div>
                 <div class="player">
                     <img src="joueur.png" alt="Joueur 2">
-                    <h3>Saul</h3>
+                    <h3>Saul Vimond</h3>
                     <p>Créateur de ZSK Esport</p>
                 </div>
                 <div class="player">
@@ -111,5 +118,14 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Toggle mobile navigation
+        const toggleButton = document.querySelector('.navbar-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        toggleButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
